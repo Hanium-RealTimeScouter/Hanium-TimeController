@@ -2,10 +2,13 @@
 <project name="Build Time Controller plugin" default="packaging">
     <property name="dir.target.jar" value="./out" />
     <property name="dir.classes" value="./bin" />
+	
+	<!-- Version Information -->
+	<property name="info.version" value="1.4.0"/>
 
     <target name="packaging">
         <mkdir dir="${dir.target.jar}" />
-        <jar destfile="${dir.target.jar}/scouter-plugin-server-time-controller.jar">
+        <jar destfile="${dir.target.jar}/scouter-plugin-server-time-controller-${info.version}.jar">
             <fileset dir="${dir.classes}"/>
         </jar>
     </target>

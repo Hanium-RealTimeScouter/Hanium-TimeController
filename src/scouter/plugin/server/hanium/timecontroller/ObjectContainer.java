@@ -36,7 +36,6 @@ public class ObjectContainer {
 	 * [4]: ERR_LAST_TIME = 마지막 에러 발생 시간
 	 * 
 	 */
-	//private static transient HashMap<Integer, long[]> objContainer = new HashMap<Integer, long[]>();
 	
 	private static transient HashMap<Integer, Container> objContainer = new HashMap<Integer, Container>();
 	
@@ -213,7 +212,7 @@ public class ObjectContainer {
     					"[위 험] : 에러가 %d분 동안 지속 발생중입니다! (제한시간: %d분)" + NEW_LINE +
     					"          최초 발생시간: %s"+ NEW_LINE +
     					"          누적 에러 발생 횟수: %d 회"+ NEW_LINE +
-    					"(테스트: %s)" + NEW_LINE,
+    					"          (테스트: %s)" + NEW_LINE,
     					(curTime - values[ERR_START_TIME]) / A_MINUTE,
     					(values[ERR_LIMIT_TIME]) / A_MINUTE, 
     					sdf.format(new Date(values[ERR_START_TIME])),
