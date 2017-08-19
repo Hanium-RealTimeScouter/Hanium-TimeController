@@ -3,4 +3,4 @@
 
 ## VERSION INFO
  - ver 1.4.0 (BUILD 20170819)
-  -- Added Version.java files
+    - Added Version.java files
